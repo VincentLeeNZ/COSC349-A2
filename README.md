@@ -6,7 +6,7 @@
 
 
 
-This repository contains the source code required to create a mock online store in which admin users can insert/delete products and general users can view them. The store uses two ec2 intances which are connected to a single RDS service. The store also uses two S3 buckets to contain images that are used for each product. One bucket is used for storing the intitial image, another bucket is used for storing the resized image after the lambda function.
+This repository contains the source code required to create a mock online store in which admin users can insert/delete products and general users can view them. The store uses two ec2 instances which are connected to a single RDS service. The store also uses two S3 buckets to contain images that are used for each product. One bucket is used for storing the intitial image, another bucket is used for storing the resized image after the lambda function.
 
 
 
@@ -16,7 +16,7 @@ This repository contains the source code required to create a mock online store 
 ## Creating the two instances:  
 Instructions for creating EC2 instances can be found here: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html  
 
-## Creating and Connecting to an RDS for MySQL intance:
+## Creating and Connecting to an RDS for MySQL instance:
 Instructions can be found here: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html
 
 
