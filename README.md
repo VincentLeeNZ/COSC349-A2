@@ -1,6 +1,6 @@
 # COSC349-A2
 
-[Admins](http://ec2-34-237-15-90.compute-1.amazonaws.com/) (Username and Password are both admin)
+[Admins](http://ec2-34-237-15-90.compute-1.amazonaws.com/) (Username and Password are both admin)  
 [Customers](http://ec2-35-169-251-26.compute-1.amazonaws.com/)
 
 
@@ -33,20 +33,20 @@ Complete step 1 from here: https://docs.aws.amazon.com/AmazonS3/latest/userguide
 After you have created two buckets, edit each bucket policy to have something similar to this:
 
 {
-    "Version":"2012-10-17",
-    "Statement": [{
-        "Sid": "Allow Public Access to All Objects",
-        "Effect": "Allow",
-        "Principal": "*",
-        "Action": "s3:GetObject",
-        "Resource": "arn:aws:s3:::this-is-a-sample-s3/*"
-    }] 
-}
-**You must change the Resource to match the name of your bucket!**
-Make sure you can upload images and see them on your browser if you click the link!!
+    "Version":"2012-10-17",  
+    "Statement": [{  
+        "Sid": "Allow Public Access to All Objects",  
+        "Effect": "Allow",  
+        "Principal": "*",  
+        "Action": "s3:GetObject",  
+        "Resource": "arn:aws:s3:::this-is-a-sample-s3/*"  
+    }]   
+}  
+**You must change the Resource to match the name of your bucket!**  
+Make sure you can upload images and see them on your browser if you click the link!!  
 
-## Lambda Function
-**Set your run time to Python 3.9 or this will NOT work**
+## Lambda Function  
+**Set your run time to Python 3.9 or this will NOT work**  
 A guide to seting up a lambda function can be found here: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-tutorial.html. Skip to create the lambda function and follow the rest of the steps, make sure to use the zip file within this repository. 
 
 
@@ -55,11 +55,11 @@ A guide to seting up a lambda function can be found here: https://docs.aws.amazo
 
 
 ### Sources:
-https://docs.aws.amazon.com/lambda/latest/dg/with-s3-tutorial.html
-https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorial-s3-object-lambda-uppercase.html
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html
-https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html
+https://docs.aws.amazon.com/lambda/latest/dg/with-s3-tutorial.html  
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/tutorial-s3-object-lambda-uppercase.html  
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html  
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_GettingStarted.CreatingConnecting.MySQL.html  
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Tutorials.WebServerDB.CreateWebServer.html  
 
 
 
